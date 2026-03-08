@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        a
+        {
+            text-decoration: none;
+        }
+        a:visited
+        {
+            color: red;
+        }
+        a:hover
+        {
+            text-decoration:underline;
+            color: #00e1ff;
+        }
+        /*  Ó O PSEUDO ELEMENTO AÍ "::after"  */
+        a:hover::after
+        {
+            content: ' ⇦';
+            color: #000;
+        }
+        a:hover::before
+        {
+            content: '⇨ ';
+            color: #000;
+        }
+        a:active
+        {
+            color: green;
+        }
+
+    </style>
+</head>
+    <body>
+        <h1>Links de sites</h1>
+        
+        <ul>
+            
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+            <li><a href="https://wordpress.com" target="_blank">WordPress</a></li>
+            
+        </ul>
+        <ul style="font-size: 25px; font-weight: bold;">Seletores Personalizados:
+            <li>" # " = id</li>
+            <li>" . " = class</li>
+            <li>" : " = pseudo-class</li>
+            <li>" :: " = pseudo-element</li>
+            <li>" > " = children</li>
+        </ul>
+    </body>
+</html>

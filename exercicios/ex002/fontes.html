@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        @font-face
+        {
+            font-family: 'Ritual of the Witch';
+            src: url('fontes/Ritual\ of\ the\ Witch.ttf'); 
+            font-weight: normal;
+            font-style: normal;
+            /*Tipos de format:
+            - truetype (.ttf)
+            - opentype (.otf)
+            - embedded-opentype 
+            - truetype-aat (Apple Advanced Typography)
+            - svg (Scalable Vector Graphics)
+            */  
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        h1
+        {
+            /*font-family: 'Roboto', sans-serif;
+            font-size: 3em;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;*/
+
+            /*shorthand para fonte
+            ordem -> estilo, peso, tamanho, família */
+            font: italic bold 3em 'Roboto', sans-serif;
+        }
+        p
+        {
+            font-family: 'Ritual of the Witch', sans-serif;
+            font-size: 2em;
+            font-weight: lighter;
+            font-style: none;
+            text-decoration: none;
+
+        }
+        main
+        {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        body
+        {
+            background-color: rgb(158, 129, 95);
+        }
+    </style>
+</head>
+    <body>
+        <main>
+            <h1>Titulo 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aperiam. Est cum error deserunt, quo aspernatur unde reprehenderit inventore tempora, voluptas quia ullam incidunt quisquam excepturi, animi maxime eaque corrupti fugit possimus corporis repudiandae! Facere, temporibus voluptas non suscipit natus unde ex obcaecati doloremque consequatur laboriosam voluptates nemo molestias quia necessitatibus a sint cupiditate, consectetur numquam dolore nostrum dolorum odit delectus, quam error. Nemo ducimus perferendis ipsa pariatur soluta, obcaecati voluptate earum aspernatur dicta voluptatum quia iste, fugiat dolores debitis quo hic ullam esse voluptates sapiente, recusandae vel! Odio molestiae harum nesciunt sed eum minus repudiandae sunt ab facilis ipsa?</p>
+        </main>
+    </body>
+</html>

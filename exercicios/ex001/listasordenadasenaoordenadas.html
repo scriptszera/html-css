@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!--só testando aqui os comentariooooooooooosssss-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+    <body>
+        <h1>Listas Ordenadas</h1>
+        <h2>Obs: A partir do HTML5 o fechamento da tag "li" ficou opcional.</h2>
+            <p>Use "ol"</p>
+        <ol> Jogos de Console
+            <li>NES</li>
+                <ol style="list-style-type: upper-roman;">
+                    <li>The Legends of Zelda (1986)
+                    <li>The Adventures of Link (1987)
+                </ol>
+            <li>PS4</li>
+                <ol style="list-style-type: upper-roman;">
+                    <li>Uncharted 4</li>
+                    <li>The Last Of Us Part II</li>
+                </ol>
+        </ol>
+
+        <p>A tag "ol" possui um parâmetro type que está desatualizado, <mark>(portando use ("style="list-style-type: ;") se quiser mudar o tipo, veja a lista de opções e veja qual bate com as antigas)</mark>, onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são:<br>
+        1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, ...<br>
+        A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, ...<br>
+        a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, ...<br>
+        I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV,...<br>
+        i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv,...<br>
+        Você também pode indicar o início da contagem usando o parâmetro start.
+        Por exemplo, a tag (ol type="I" start = "5") vai gerar itens numerados como V, VI, VII, VIII, IX,</p>
+        <hr>
+        <h1>Listas não Ordenadas</h1>
+            <p>Use "ul"</p>
+        <ul>Jogos de Console
+            <li>NES</li>
+                <ul>
+                    <li>The Legends of Zelda (1986)</li>
+                    <li>The Adventures of Link (1987)</li>
+                </ul>
+            <li>PS4</li>
+                <ul style="list-style-type: square;">
+                    <li>Uncharted 4
+                    <li>The Last Of Us Part II
+                </ul>
+        </ul>
+        <p>O marcador padrão é uma bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade tipo da tag "ul" com os seguintes valores:<br>
+        disc - padrão. Uma bola preta totalmente pintada<br>
+        circle - Uma bola com uma borda preta e sem preenchimento<br>
+        square - Um pequeno quadrado preto totalmente pintado<br>
+        <strong>(como dito na marcação lá em cima, use CSS em vez do parametro type)</strong></p>
+        <hr>
+        <h1>Listas de Definição</h1>
+        <p>Use "dl" para lista; "dt" para o termo e "dd" para a definição"</p>
+        <dl>
+            <dt>HTML</dt>
+                <dd>Linguagem de Marcação para a criação de conteúdo de um site</dd>
+            <dt>CSS</dt>
+                <dd>Linguagem de Marcação para o design do conteúdo de um site</dd>
+            <dt>JavaScript</dt>
+                <dd>Linguagem de Programação para a criação de interatividade de um site</dd>
+        </dl>
+    </body>
+</html>
