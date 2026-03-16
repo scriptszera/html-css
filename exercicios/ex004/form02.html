@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preenchimento de Formulário</title>
+    <style>
+
+    *
+    {margin: 0px;
+    padding: 0px;}
+
+    nav
+    {background-color: grey;
+    padding: 5px;}
+
+    nav a
+    {margin-left: 10px;}
+
+    body
+    {background-color: whitesmoke;}
+    
+    form> p,input
+    {margin:5px;}
+
+    form
+    {margin: 10px;}
+
+    h1
+    {margin: 15px;}
+    </style>
+</head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">Home</a>
+            </nav>
+
+        </header>
+        <h1>Login</h1>
+
+        <form action="formulario.php" method="post" autocomplete="on">
+
+            <p><label for="user">Usuário:</label>
+            <input type="text" name="user" id="user" required minlength="5" maxlength="15" size="16" placeholder="joaozin1234" autocomplete="username"></p>   
+
+            <p><label for="pass_id">Senha:</label>
+            <input type="password" name="pass" id="pass_id" required minlength="8" maxlength="20" size="16" placeholder="senha4321" autocomplete="current-password"></p>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Próximo">
+
+        </form>
+
+    </body>
+</html>

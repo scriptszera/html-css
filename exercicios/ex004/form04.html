@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+    <body>
+        <h1>Insira seus dados</h1>
+        <form action="#" method="get">
+            <fieldset style="box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377); margin-bottom: 15px;">
+                <legend style="background-color: white;">Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome" id="nome" maxlength="50" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required
+                    autocomplete="email">
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" autocomplete="tel"
+                    pattern="^\(\d{2}\)\d{5}-\d{4}$" maxlength="14" required placeholder="(xx)xxxxx-xxxx">
+                    <p>Digite o telefone deste modelo: (12)34567-8901</p>
+                </p>
+            </fieldset>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </body>
+</html>

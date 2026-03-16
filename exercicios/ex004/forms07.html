@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, datalist e textarea</title>
+</head>
+    <body>
+       <h1>Exemplos:</h1> 
+
+        <form action="" method="post">
+            <p>
+                <label id="idestados">
+                    Estados:</label>
+                        <select name="estados" id="idestados">
+                                <option value="" selected> --- Escolha --- </option>
+                            <optgroup label="Nordeste">
+                                <option value="ma">Maranhão</option>
+                                <option value="pe">Pernambuco</option>
+                                <option value="ba">Bahia</option>
+                            </optgroup>
+                            <optgroup label="Sudeste">
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="es">Espírito Santo</option>
+                                <option value="mg">Minas Gerais</option>
+                            </optgroup>
+                        </select>
+            </p>
+
+            <p>
+                <label for="idprof">Profissão:</label>
+                <input type="text" name="prof" id="idprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option>Açougueiro</option>
+                        <option>Caixista</option>
+                        <option>Banqueiro</option>
+                        <option>Empresário</option>
+                        <option>Atendente</option>
+                    </datalist>
+            </p>
+
+            <p>
+                <label for="iddesc">Descrição:</label>    
+                <textarea name="desc" id="iddesc" placeholder="..."></textarea>
+            </p>
+
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+            
+        </form>
+    </body>
+</html>
