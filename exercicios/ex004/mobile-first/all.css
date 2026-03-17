@@ -11,12 +11,12 @@
 
 body
 {background-image: url(imagens/back-phone.jpg);
-margin: 10px;}
-
+background-size: cover;
+margin: 50px;}
 
 main
 {background-color: rgba(255, 255, 255, 0.548);
-max-width: 450px;
+max-width: 100vw;
 margin: auto;
 border-radius: 7px;}
 
@@ -42,13 +42,18 @@ margin: auto;}
 
 
 /*tablet*/
-@media screen and (min-width: 768px) {
-    
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+body 
+{background-image: url(imagens/back-tablet.jpg);
+background-size: cover;}
+
 #phone
 {display: none;
 margin: auto;}
 #tablet
-{display: block;}
+{display: block;
+margin: auto;}
 #print
 {display: none;}
 #desktop
@@ -57,13 +62,60 @@ margin: auto;}
 {display: none;}
 }
 /*print*/
+@media print {
+    
+body 
+{background-image: url(imagens/back-print.jpg);}
 
-
-
+#phone
+{display: none;}
+#tablet
+{display: none;}
+#print
+{display: block;}
+#desktop
+{display: none;}
+#tv
+{display: none;}
+}
 
 /*desktop*/
-
+@media screen and (min-width: 992px) and (max-width:1199px)
+{
+body
+{background-image: url(imagens/back-pc.jpg);
+background-size: cover;}
+ #phone
+{display: none;}
+#tablet
+{display: none;}
+#print
+{display: none;}
+#desktop
+{display: block;
+margin: auto;}
+#tv
+{display: none;}    
+}
 
 
 
 /*tv*/
+@media screen and (min-width: 1200px)
+{
+body
+{background-image: url(imagens/back-tv.jpg);
+background-size: cover;}
+#phone
+{display: none;}
+#tablet
+{display: none;}
+#print
+{display: none;}
+#desktop
+{display: none;}
+#tv
+{display: block;
+margin: auto;}
+
+}
