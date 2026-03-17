@@ -64,15 +64,22 @@ margin: auto;}
 /*print*/
 @media print {
     
-body 
-{background-image: url(imagens/back-print.jpg);}
+body h1
+{background-image: url(imagens/back-print.jpg);
+font-family: 'Courier New', Courier, monospace;
+text-shadow: none;
+color: grey;}
+
+main 
+{border: 3.5px solid black;}
 
 #phone
 {display: none;}
 #tablet
 {display: none;}
 #print
-{display: block;}
+{display: block;
+margin: auto;}
 #desktop
 {display: none;}
 #tv
