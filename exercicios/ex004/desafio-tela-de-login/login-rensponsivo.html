@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="responsive" href="style2.css">
+</head>
+    <body>
+
+
+        <main>
+            <img src="imagem.jpg" alt="fundologin">
+            <div>
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente, Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <form action="login.php" method="post">
+
+                    <label for="email-id">
+                        <img src="do-utilizador.png" id="user">
+                        <input type="email" name="email" id="email-id" placeholder="  Seu Email" required>
+                    </label>
+                    <br>
+                    <label for="">
+                        <img src="chave-inteligente.png" id="chave">
+                        <input type="password" name="senha" id="senha-id"
+                        placeholder="  Sua Senha" required maxlength="10" minlength="5">
+                    </label>
+                    <br>
+                    <input id="entrar" type="submit" value="Entrar">
+                    <input id="esqueci" type="submit" value="Esqueci a senha" >
+                </form>
+            
+        
+            </div>
+        </main>
+
+
+    </body>
+</html>

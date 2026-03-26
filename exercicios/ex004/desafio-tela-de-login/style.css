@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+*
+{margin: 0px;
+padding: 0px;}
+
+body
+{background-color: purple;}
+
+main
+{position: relative;
+background-color: white;
+overflow: hidden;
+width: 400px;
+height: 625px;
+margin: 25vh auto;
+border-radius: 16px;}
+
+main>img
+{display: block;
+height: 300px;
+width: 400px;
+background-position: top center;
+object-fit: cover;}
+
+div
+{background-color: lightgray;
+text-align: center;
+height: 100%;}
+
+div>h1, p
+{padding: 10px 15px;}
+
+div>h1
+{padding-top: 20px;}
+
+label
+{
+    background-color: purple;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+input
+{margin: 10px 0px;
+height: 30px;
+border-radius: 10px;
+border: 0px;}
+
+#user
+{width: 20px;
+margin-right: 10px;}
+
+#chave
+{width: 20px;
+margin-right: 10px;}
+
+#entrar
+{background-color: blue;
+color: aliceblue;
+padding: 5px 20px;
+border-radius: 10px;}
+
+#esqueci
+{background-color: blue;
+color: aliceblue;
+padding: 5px 10px;
+border-radius: 10px;}

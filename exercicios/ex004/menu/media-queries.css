@@ -8,24 +8,25 @@ desktop: de 992px até 1200px
 grandes telas: de 1200px pra cima
 */
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 992px) {
     
-    article
-    {max-width: 800px;}
+
     
     #burguer 
     {display: none;}
 
     menu
-    {display: block;}
+    {display: block !important;}
     
     menu>ul 
     {text-align: left;}
 
     menu>ul>li 
     {display: inline-block;
-    margin: 0px 10px 0px 10px;}
+    margin: 0px 10px 0px 10px;
+    border-top: 0px;}
 
     menu>ul>li>a
-    {border-top: none;}
+    {border-top: 0px;}
 }
