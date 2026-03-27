@@ -2,7 +2,8 @@
 
 *
 {margin: 0px;
-padding: 0px;}
+padding: 0px;
+transition: width .5s, height .5s;}
 
 body
 {background-color: purple;
