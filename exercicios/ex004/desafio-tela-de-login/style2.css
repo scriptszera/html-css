@@ -1,5 +1,61 @@
 @charset "UTF-8";
 @media screen and (min-width: 768px) 
 {
-    
+
+    body
+    {
+        background:linear-gradient(purple, white);
+    }
+
+    main
+    {
+        background-image: url(imagem.jpg);
+        background-size: contain;
+        background-position-x: 373px;
+        overflow: hidden;
+        text-align: right;
+        background-position-y: 0px;
+        height: 500px;
+    }
+
+    main>div>h1
+    {
+        margin-top: 130px;
+    }
+
+    main>div
+    {
+        display: inline-block;
+        min-width: 313px;
+    }
+
+    main>img 
+    {display: none;}
+
+    #email-id
+    {width: 380px;}
+
+    #senha-id
+    {width: 380px;}
+
+
+}
+
+@media screen and (min-width: 992px)
+{
+    main 
+    {
+        margin: 25vh auto;
+    }
+
+
+     main
+    {
+        background-size: cover;
+        background-position-x: 277px;
+        overflow: hidden;
+        text-align: right;
+        background-position-y: -357px;
+        text-align: left;
+    }   
 }

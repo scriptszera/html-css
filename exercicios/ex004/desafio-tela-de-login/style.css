@@ -5,34 +5,42 @@
 padding: 0px;}
 
 body
-{background-color: purple;}
+{background-color: purple;
+background-attachment: fixed;
+height: 100vh;}
 
 main
 {position: relative;
 background-color: white;
 overflow: hidden;
-width: 400px;
+min-width: 200px;
+max-width: 992px;
 height: 625px;
-margin: 25vh auto;
+margin: 25vh 30px;
 border-radius: 16px;}
 
 main>img
 {display: block;
 height: 300px;
-width: 400px;
+width: 100%;
+min-width: 200px;
 background-position: top center;
 object-fit: cover;}
 
-div
+main>div
 {background-color: lightgray;
 text-align: center;
 height: 100%;}
 
-div>h1, p
+main>div>h1, p
 {padding: 10px 15px;}
 
-div>h1
+main>div>h1
 {padding-top: 20px;}
+
+main>div>p
+{max-width: 555px;
+display: inline-block;}
 
 label
 {
@@ -67,3 +75,10 @@ border-radius: 10px;}
 color: aliceblue;
 padding: 5px 10px;
 border-radius: 10px;}
+
+#email-id
+{width: 250px;}
+
+#senha-id
+{width: 250px;}
+
