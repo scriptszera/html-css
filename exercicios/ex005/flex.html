@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <STYle>
+        html,body
+        {
+            font-family: monospace;
+            margin: 0px;
+            padding: 0px;
+        }
+        .item 
+        {
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            width: 100px;
+        }
+        .conteiner
+        {
+            background-color: rgba(255, 94, 0, 0.521);
+            height: 400px;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </STYle>
+</head>
+    <body>
+        <div class="conteiner">
+            <div class="item">AAA AAA</div>
+            <div class="item">BBB BBB</div>
+            <div class="item">CCC CCC</div>
+            <div class="item">DDD DDD</div>
+            <div class="item">EEE EEE</div>
+            <div class="item">FFF FFF</div>
+            <div class="item">GGG GGG</div>
+        </div>
+    </body>
+</html>

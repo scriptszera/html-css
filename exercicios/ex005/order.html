@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        main
+        {
+            background-color: darkgray;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .letras
+        {
+            background-color: white;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+        }
+        #A
+        {
+            order: 5;
+        }
+        #B
+        {
+            order: 4;
+        }
+        #C
+        {
+            order: 2;
+        }
+        #D
+        {
+            order: 3;
+        }
+        #E 
+        {
+            order: 1;
+        }
+        #F
+        {
+            order: 0;
+        }
+        #G
+        {
+            order: -1;
+        }
+
+    </style>
+</head>
+    <body>
+        <main>
+            <section class="letras" id="A">A</section>
+            <section class="letras" id="B">B</section>
+            <section class="letras" id="C">C</section>
+            <section class="letras" id="D">D</section>
+            <section class="letras" id="E">E</section>
+            <section class="letras" id="F">F</section>
+            <section class="letras" id="G">G</section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Só Flex</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main
+        {
+            height: 100vh;
+            display: flex;
+            border: 1px dotted black;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            
+        }
+        header
+        {
+            display: flex;
+            border: 1px dotted black;
+            flex-flow: column nowrap;
+            padding: 15px;
+        }
+        main>article
+        {
+            display: flex;
+            border: 1px dotted black;
+            flex-flow: column nowrap;
+            background-color: grey;
+            padding: 15px;
+        }
+        main>article>h2, p
+        {
+
+            border: 1px dotted black;
+
+        }        
+        figure
+        {
+            border: 1px dotted black;
+        }
+        #a3
+        {
+            display: none;
+        }
+        @media screen and (min-width: 768px)
+        {
+
+            #a1
+            {
+                display: none;
+            }
+            #a3
+            {
+                display: flex;
+                flex-flow: row wrap;
+            }
+            #a3>figure
+            {
+                flex: 1 1 200px;
+            }
+            #a2
+            {
+                flex-flow: row wrap;
+                justify-items: center;
+            } 
+            #a2>p 
+            {
+                flex: 1 0 300px;
+            }
+            #a2>figure
+            {
+                flex: 1 1 100px;
+                
+            }          
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            
+            <h1>Exemplo 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero ipsam quibusdam nulla quas ratione fuga tempora nam saepe sint accusamus sed maiores provident autem delectus aliquid labore, eos accusantium minus dolorum unde reiciendis! Error officiis maiores, sint fugit deserunt repellat fugiat totam. Incidunt ex quisquam fugit molestiae atque optio repellendus culpa porro, et sed iste.</p>
+        </header>
+        <article id="a1">
+            <figure></figure>
+            <h2>Elemento Text -> Media</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero ipsam quibusdam nulla quas ratione fuga tempora nam saepe sint accusamus sed maiores provident autem delectus aliquid labore, eos accusantium minus dolorum unde reiciendis! Error officiis maiores, sint fugit deserunt repellat fugiat totam. Incidunt ex quisquam fugit molestiae atque optio repellendus culpa porro, et sed iste dignissimos quis recusandae hic doloremque, impedit beatae expedita magni ea ipsum. Expedita reiciendis voluptatibus consequuntur architecto vitae ipsa fuga nihil aspernatur tempore quod odit quasi itaque nostrum voluptatum nisi cupiditate accusamus adipisci dolorem totam recusandae laboriosam maxime, exercitationem modi. Praesentium porro consequatur illum soluta.</p>
+        </article>
+        <article id="a3">
+            <h2>Elemento Text -> Media</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero ipsam quibusdam nulla quas ratione fuga tempora nam saepe sint accusamus sed maiores provident autem delectus aliquid labore, eos accusantium minus dolorum unde reiciendis! Error officiis maiores, sint fugit deserunt repellat fugiat totam. Incidunt ex quisquam fugit molestiae atque optio repellendus culpa porro, et sed iste dignissimos quis recusandae hic doloremque, impedit beatae expedita magni ea ipsum. Expedita reiciendis voluptatibus consequuntur architecto vitae ipsa fuga nihil aspernatur tempore quod odit quasi itaque nostrum voluptatum nisi cupiditate accusamus adipisci dolorem totam recusandae laboriosam maxime, exercitationem modi. Praesentium porro consequatur illum soluta.</p>
+            <figure></figure>
+        </article>
+        <article id="a2">
+            <h2>Elemento Text -> Media</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero ipsam quibusdam nulla quas ratione fuga tempora nam saepe sint accusamus sed maiores provident autem delectus aliquid labore, eos accusantium minus dolorum unde reiciendis! Error officiis maiores, sint fugit deserunt repellat fugiat totam. Incidunt ex quisquam fugit molestiae atque optio repellendus culpa porro, et sed iste dignissimos quis recusandae hic doloremque, impedit beatae expedita magni ea ipsum. Expedita reiciendis voluptatibus consequuntur architecto vitae ipsa fuga nihil aspernatur tempore quod odit quasi itaque nostrum voluptatum nisi cupiditate accusamus adipisci dolorem totam recusandae laboriosam maxime, exercitationem modi. Praesentium porro consequatur illum soluta.</p>
+            <figure><iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=Pxg66TxgYwLyJKzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure>
+        </article>
+    </main>
+
+
+
+
+
+
+</body>
+</html>
